@@ -7,6 +7,141 @@ title: Changelog
   <h1>MEAN.JS Changelog</h1>
 </section>
 
+<h1>Version 0.4.2 (11/11/2015)</h1>
+<h2>Small Bug Fixes & General Update</h2>
+<p>
+<li>bug(readme): Remove Broken Live Demo Link (9bfb312)</li>
+<li>test(travis): Add Testing for Node 5 (eafad77)</li>
+<li>[bug] Dont use Cache (3db8709)</li>
+<li>[bug] Gulp test wasn't running server tests (2131ccd)</li>
+<li>[bug] Seed Password's strength Closes #908, closes #908</li>
+<li>[doc] Add seed user instructions to README (927855f)</li>
+<li>[docs] Changelog (892d9bf)</li>
+<li>[docs] Information about Contributing (5a4fe5a)</li>
+<li>[hotfix] Fixes db seed password bug (1c7d742)</li>
+<li>[hotfix] SeedDB missing in env config (28f1f57)</li>
+<li>Add ESLint support (d5cc4b7)</li>
+<li>Added Ruby and Sass to requirements with install directions (cec3e1f)</li>
+<li>Added short Gulp Section to Intro (1a3d3c1)</li>
+<li>adding ability to configure session.secret in local env config (2eb0b09)</li>
+<li>Adding another job for Travis CI to run the grunt coverage task on every build (c6e0f68)</li>
+<li>adding caching for packages and npm modules across builds. Also setting sudo to false as it's not us (97d7eb7)</li>
+<li>adding karma coverage for grunt (c2b13b9)</li>
+<li>Adding MEAN.JS version information as part of the startup info when app loads (58b371b)</li>
+<li>adding more API tests (eb7c4f8)</li>
+<li>adding protractor options to fix travis failing (83eb2dc)</li>
+<li>adding return done() to tests (b07af94)</li>
+<li>adding route tests for user/admin CRUD operations (de354ee)</li>
+<li>adding stronger password requirements for improving security based on OWASP (1fd6bb6)</li>
+<li>Adding support for meanjs-version specific configuration option and displaying both MEAN.JS project (a12746e)</li>
+<li>adding support for nodejs v4 and allowing it to fail without failing the complete build for CI (0302a76)</li>
+<li>adding tests for directives (6514044)</li>
+<li>adding tests for meanjs core server functionality (6f8b5bf)</li>
+<li>adding the required support to properly build the nodejs v4 edition (b7a57ab)</li>
+<li>Changed favicon string to env variable (5af083c)</li>
+<li>Dummy config directory for the articles module to make it easier for developers to understand and re (903b4ca)</li>
+<li>Duplicate CRUD Test - Profile Picture (a871c92)</li>
+<li>Enable log options for Morgan (8cd2291)</li>
+<li>Fail Build on Node 4 (c8672a5)</li>
+<li>Favicon invalid path (e6a5732)</li>
+<li>Fix redirection to previous state after required authentication (2b8bee0)</li>
+<li>Fix typo (be36823)</li>
+<li>fixed bug #923 - making password reset links work for both http and https configuration (b824ebc), closes #923</li>
+<li>fixes #898 - addressing the issue where the webhook API is hard-coded into the travis config file (70e83ff), closes #898</li>
+<li>fixing grunt and gulp e2e tests (fdf1ad5)</li>
+<li>fixing jshint issues by requiring single quotes (a38abd0)</li>
+<li>Fixing jshint issues with grunt, gulp, and reset-password script. (1f79770)</li>
+<li>fixing spacing (96bcd6d)</li>
+<li>Format code according to ESLint rules (0323696)</li>
+<li>Formatting and Indentation (75cf745)</li>
+<li>Global Mocha timeout (037878b)</li>
+<li>Link for download link (NodeJs download) (c83eefa)</li>
+<li>Lock mongoose version to a working version (64916dd)</li>
+<li>Logger Development config default (99fe989)</li>
+<li>Merge pull request #1000 from tatethurston/docs/requirements (27ce914)</li>
+<li>Merge pull request #1001 from ilanbiala/node-pre-gyp (9795cc0), closes #938</li>
+<li>Merge pull request #1002 from codydaig/docs/contributing-docs (eb8d819)</li>
+<li>Merge pull request #1004 from lirantal/feature/travis-webhooks-as-env-variables (71cc173)</li>
+<li>Merge pull request #1006 from zeldar/gulpdocs#741 (aa5f12b)</li>
+<li>Merge pull request #1008 from codydaig/nocache (4dc0f30)</li>
+<li>Merge pull request #1009 from codydaig/bug/mongoose (c2a86e0)</li>
+<li>Merge pull request #1019 from mleanos/logger-default-stdout (1ddd364)</li>
+<li>Merge pull request #1020 from codydaig/updateMongoose (afd93b4)</li>
+<li>Merge pull request #1022 from codydaig/docs/changelog3 (3165351)</li>
+<li>Merge pull request #1025 from mleanos/seeddb-missing-config (860f7ce)</li>
+<li>Merge pull request #1026 from jloveland/jshint-issues-missed (d7d1d64)</li>
+<li>Merge pull request #1027 from rodp82/master (c2f0d18)</li>
+<li>Merge pull request #1028 from mleanos/duplicate-test-profile-picture (1cd909a)</li>
+<li>Merge pull request #1039 from ryanjbaxter/bluemix-mongo-changes (61ea25c)</li>
+<li>Merge pull request #1042 from codydaig/test/node5 (829a7de)</li>
+<li>Merge pull request #1043 from codydaig/bug/liveexample (23cad18)</li>
+<li>Merge pull request #801 from codydaig/docs/pull793 (fe0d106)</li>
+<li>Merge pull request #878 from jloveland/owasp-password-strength (5c16db2)</li>
+<li>Merge pull request #886 from lirantal/feature/travis-ci-enable-coverage-task (522cc6b)</li>
+<li>Merge pull request #887 from lirantal/feature/app-startup-version-number (d1a9119)</li>
+<li>Merge pull request #890 from lirantal/feature/article-module-dummy-config-dir (bd1a7d7)</li>
+<li>Merge pull request #891 from codydaig/bug/gulphang (48b1a9c), closes #873</li>
+<li>Merge pull request #893 from lirantal/feature/seeddb-refactor-users (fba6eb7)</li>
+<li>Merge pull request #901 from igorauad/fixRedirection (5901b17)</li>
+<li>Merge pull request #904 from jloveland/jshint-single-quotes (cc80930)</li>
+<li>Merge pull request #906 from lirantal/feature/travis-add-node-v4 (be3622b)</li>
+<li>Merge pull request #909 from codydaig/patch-1 (03da3ee), closes #908</li>
+<li>Merge pull request #910 from jloveland/hide-password-validator (cc486d5)</li>
+<li>Merge pull request #911 from simonlinj/patch-1 (3e69385)</li>
+<li>Merge pull request #917 from simison/patch-13 (8cbbb35)</li>
+<li>Merge pull request #921 from mleanos/dbseed-user-passwords (b800141)</li>
+<li>Merge pull request #922 from lirantal/feature/travis-add-node-v4-gcc-update (3cfd978)</li>
+<li>Merge pull request #924 from lirantal/bugfix/923-ssl-support-for-password-reset (cdd6a79), closes #923</li>
+<li>Merge pull request #925 from lirantal/bugfix/user-route-tests-typos (0a91e34)</li>
+<li>Merge pull request #927 from jloveland/local-session-secret (28ae5d6)</li>
+<li>Merge pull request #928 from lirantal/feature/user-route-tests-improve (658ac8d)</li>
+<li>Merge pull request #937 from lirantal/feature/seeddb-refactoring (7fcd4f2)</li>
+<li>Merge pull request #939 from jloveland/e2e-tests-fix (7a9ee53), closes #929</li>
+<li>Merge pull request #944 from SibuStephen/patch-1 (1b22b7c)</li>
+<li>Merge pull request #948 from gustavodemari/update-multer-profile-upload (63d0d71), closes #947</li>
+<li>Merge pull request #956 from mleanos/mocha-test-suite-timeouts (3ff893a), closes #955</li>
+<li>Merge pull request #957 from mleanos/seeddb-enhance-testability (e30c3d1)</li>
+<li>Merge pull request #959 from lirantal/feature/user-route-tests-improve-3 (4586c29)</li>
+<li>Merge pull request #967 from mleanos/user-model-validate-bug (19aea2f), closes #966</li>
+<li>Merge pull request #968 from jloveland/e2e-test-error (3454cf8)</li>
+<li>Merge pull request #971 from jloveland/session-tests-return (9c78c63)</li>
+<li>Merge pull request #972 from mleanos/mocha-global-timeout-grunt (8a12f76)</li>
+<li>Merge pull request #980 from codydaig/patch-1 (7406b2d)</li>
+<li>Merge pull request #985 from jloveland/karma-coverage (76e11e4)</li>
+<li>Merge pull request #987 from mleanos/favicon-path-bug (3a4c51a), closes #979</li>
+<li>Merge pull request #990 from ilanbiala/eslint (1729db3), closes #763</li>
+<li>Merge pull request #991 from ilanbiala/formatting-fixes (52f94a2)</li>
+<li>Merge pull request #993 from jloveland/e2e-fail-travis (7509074)</li>
+<li>Merge pull request #999 from mleanos/morgan-logger-config (a6b3f14)</li>
+<li>Mocha test timeouts fixes #955, closes #955</li>
+<li>refactoring the seeddb logic to work with promises all over due to all the async behavior (9886093)</li>
+<li>Refactoring the seeded user objects to be easily maintained (05f9053)</li>
+<li>removing keepAlive conf to fail travis if e2e tests fail (70d7e17)</li>
+<li>renaming strength meter, hiding when password field is empty, and refactoring directives to use $va (f733efb)</li>
+<li>Repeating Characters condition (3d37e20)</li>
+<li>Seed options - logResults (0560062)</li>
+<li>Solves User model validation bug (288f0b4)</li>
+<li>Switched to using new MongoDB service in Bluemix since MongoLabs is being removed (7340e68)</li>
+<li>Synchronous tests (32e0d12)</li>
+<li>Update Bower manifest (08c0732)</li>
+<li>Update Mongoose Version (09bc727)</li>
+<li>Update package.json (2ab02b7)</li>
+<li>updating .travis.yml file for allowing builds to fail (984e168)</li>
+<li>updating comments for tests in code (1eddc47)</li>
+<li>updating profile upload with a new version of multer (7ecf933)</li>
+<li>updating travis to support installing a local mail server (0017886)</li>
+</p>
+
+<h1>Version 0.4.1 (03/09/2015)</h1>
+<h2>Small Bug Fixes & General Update</h2>
+
+
+<h1>Version 0.4.0 (03/08/2015)</h1>
+<h2>Small Bug Fixes & General Update</h2>
+<p>
+  Releasing MEAN.JS 0.4.0 version on-top of previously MEAN.JS 0.3.3 on master branch
+</p>
+
 <h1>Version 0.3.3 (07/10/2014)</h1>
 <h2>Small Bug Fixes & General Update</h2>
 <p>
