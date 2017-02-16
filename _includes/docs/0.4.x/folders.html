@@ -1,0 +1,42 @@
+<div class="inner-link-anchor" id="folders"></div>
+<section class="page-header">
+  <h1>Folders</h1>
+</section>
+<section>
+  <p>
+    The folder structure of your MEANJS application is shown in the following diagram:
+  </p>
+  <img src="{{ "/img/folders.png" | prepend: site.baseurl }}" alt="MEANJS Folder Structure">
+  <br>
+  <br>
+  <p> 
+    The application root folder is shown here with the name <b>&lt;project-home&gt;</b> but yours will be named whatever you like depending on how you decide to identify your own application.
+    Below is an explanation of what goes where and why.
+  </p>
+  <h2>&lt;project-home&gt;</h2>
+  <p>
+    This is the base of your application and holds the following:
+    <ul>
+      <li>Application configuration files;</li>
+      <li>Hidden configuration files;</li>
+      <li>A set of files used to build and start your application; and last but not least...</li>
+      <li>The four main folders containing various code modules and libraries.</li>
+    </ul> 
+  </p>
+  <h2>config</h2>
+  <p>
+    The config folder is where you house all the variable runtime configuration settings used by your application as well as a set of application helper functions, a.k.a. library or 'lib' modules.
+  </p>
+  <h2>modules</h2>
+  <p>
+    The modules folder is home to the main front-end AngularJS logic for the application. As you create various front-end capabilities and features in the application, each one will reside within this folder as a standalone module. As described in the <a href="https://docs.angularjs.org/guide/module">AngularJS Developer Guide</a>, "you can think of a module as a container for the different parts of your app".
+  </p>
+  <h2>public</h2>
+  <p>
+    This folder contains all the static front-end files used by the app to be served out. It includes elements built from your application's source as well as third-party external libraries required by your application.
+  </p>
+  <h2>scripts</h2>
+  <p>
+    This folder is home to various helper scripts used during development, administration and operation of your application.
+  </p>
+ </section>
