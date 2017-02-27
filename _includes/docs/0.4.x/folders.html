@@ -25,15 +25,56 @@
   </p>
   <h2>config</h2>
   <p>
-    The config folder is where you house all the variable runtime configuration settings used by your application as well as a set of application helper functions, a.k.a. library or 'lib' modules.
+    The config folder is where you house all the variable runtime configuration settings used by your application as well as a set of application helper functions. The following sub-folders are present within config...
+  </p>
+  <h3>config/assets</h3>
+  <p>
+    This section contains your asset management framework. When your MEANJS application is running, there will be a set of assets used to deliver functionality to your users. Assets in this context consist of files such images, cascading style sheets (css), JavaScript (js) and views (i.e. html templates).
+  </p>
+  <p>
+    Additionally, there may be variations on individual specific assets used depending on which environment your application is running in (i.e. dev, test, prod). The essential role of this asset framework is to tell the application which asset files it needs to know about and where it can find them.
+  </p>
+  <h3>config/env</h3>
+  <p>
+    This section holds the files that provide configuration settings for various <a href="https://en.wikipedia.org/wiki/Development,_testing,_acceptance_and_production">system environments</a> (i.e. local, dev, test, prod) supported by your MEANJS application.
+  </p>
+  <h3>config/lib</h3>
+  <p>
+    The lib section is home to various helper functions, i.e. 'library' modules, used by your MEANJS application. It includes components that provide support such as bootstrapping the application, establishing <a href="https://expressjs.com/"><code>express</code></a> capabilities, logging, database interaction, multi-part uploads, seeding new user accounts, and establishing socket connections.
   </p>
   <h2>modules</h2>
   <p>
     The modules folder is home to the main front-end AngularJS logic for the application. As you create various front-end capabilities and features in the application, each one will reside within this folder as a standalone module. As described in the <a href="https://docs.angularjs.org/guide/module">AngularJS Developer Guide</a>, "you can think of a module as a container for the different parts of your app".
   </p>
+  <p>
+    While we provide a few out of the box, you will be responsible for creating your own modules as you use MEANJS to develop your own application. Sub-directories within each modules folder should generally have the following structure...
+  </p>
+  <h3>modules/*/client</h3>
+  <p>
+    Client-side code and associated files relating to the specific module.
+  </p>
+  <h3>modules/*/server</h3>
+  <p>
+    Server-side code and associated files relating to the specific module.
+  </p>
+  <h3>modules/*/tests</h3>
+  <p>
+    Code and associated files used to verify/validate other code related to the module.
+  </p>
   <h2>public</h2>
   <p>
     This folder contains all the static front-end files used by the app to be served out. It includes elements built from your application's source as well as third-party external libraries required by your application.
+  </p>
+  <p>
+    As you proceed in building your application, you will see two sub-folders within the public folder...
+  </p>
+  <h3>public/lib</h3>
+  <p>
+    External libraries used by your application and introduced by Bower will be placed here.
+  </p>
+  <h3>public/dist</h3>
+  <p>
+    Final application files that you build ready for use will be placed here. For example, this will be the destination for <a href="https://en.wikipedia.org/wiki/Minification_(programming)">minified</a> scripts for use in production.
   </p>
   <h2>scripts</h2>
   <p>
