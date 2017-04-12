@@ -1,0 +1,70 @@
+<div class="inner-link-anchor" id="express"></div>
+<section class="page-header">
+  <h1>Express</h1>
+</section>
+<section>
+  <p>
+    Powering every robust web application is a web framework. The MEAN.JS boilerplate uses <a href="http://expressjs.com/">Express</a> as its web framework. 
+    Express is described as "a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications... Express provides a thin layer of fundamental web application features".
+  </p>
+  <p>
+    The home for Express configuration in MEAN.JS is in the <b>config/lib/express.js</b> file. In this section, we describe how we configure and implement Express in MEAN.JS.
+  </p>
+  <h2>Exposing Config Properties</h2>
+  <h3>app.locals</h3>
+  <p>
+    An Express application has the ability to set custom properties in the <a href="http://expressjs.com/en/4x/api.html#app.locals">app.locals</a> object, which MEAN.JS does. Once set, app.locals properties persist throughout the life of the application. This is useful when you want a property to be globally accessible for all clients, i.e. users/sessions, connecting to the server.
+  </p>
+  <h3>res.locals</h3>
+  <p>
+    Our Express application also has the ability to store response local variables, i.e. <a href="http://expressjs.com/en/4x/api.html#res.locals ">res.locals</a>, scoped to the request. MEAN.JS makes use of this functionality. A res object in Express represents the HTTP response that the app sends when it gets a HTTP request. As per the API documentation, using res.locals is useful for exposing request-level information.
+  </p>
+  <h2>Routing</h2>
+  <p>
+    One of the bonuses of using Express is that we get a routing framework out of the box. In the context of MEAN.JS, routing refers to the way the app handles the combination of URL and request method that come in via requests from the client.
+  </p>
+  <p>
+    When a request comes in, the URL defines several things including the path to the requested resource, possible queries and a possible hash/fragment.
+  </p>
+  <img src="{{ "/img/URL-parts.png" | prepend: site.baseurl }}" alt="URL parts">
+  <p>
+    In addition to the URL of the request, there is the request method. This is the desired action to be performed on the resource specified by the URL. The most commonly recognisable four request methods being GET, POST, PUT and DELETE.
+  </p>
+  <p>
+    The combination of the URL and the method that comes in via each request essentially forms a route. In MEAN.JS we define how we handle each route that comes in. To do this, we utilise Express' simple and well defined approach to routing. As described in the <a href="https://expressjs.com/en/starter/basic-routing.html">basic routing guide</a> on the Express website, a route definition in Express has the following structure:
+    <br>
+    <br>
+    <b>app.METHOD(PATH, HANDLER)</b>
+  </p>
+  <p>
+    Where:
+    <ul>
+      <li>app is an instance of Express;</li>
+      <li>METHOD is an HTTP request method;</li>
+      <li>PATH is a path on the server; and</li>
+      <li>HANDLER is the function executed when the route is matched.</li>
+    </ul>
+  </p>
+  <h2>Middleware</h2>
+  <p>
+    Another of the primary goals of Express is to provide a middleware framework for web apps. The creators of Express provide a <a href="http://expressjs.com/en/guide/using-middleware.html">simple description</a>, stating “middleware are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle.
+  </p>
+  <p>
+    Note, the order in which you define your middleware in your code matters and this is reflected in MEAN.JS. When your app starts up, the order in which middleware functions are loaded determines the order in which they’ll be executed.
+  </p>
+  <p>
+    In addition to defining a few of its own middleware functions, MEAN.JS loads the following third-party middleware inside our Express config file:
+    <ul>
+      <li><a href="https://www.npmjs.com/package/compression">compression</a></li>
+      <li><a href="https://www.npmjs.com/package/serve-favicon">serve-favicon</a></li>
+      <li><a href="https://www.npmjs.com/package/morgan">morgan</a></li>
+      <li><a href="https://www.npmjs.com/package/body-parser">body-parser</a></li>
+      <li><a href="https://www.npmjs.com/package/method-override">method-override</a></li>
+      <li><a href="https://www.npmjs.com/package/cookie-parser">cookie-parser</a></li>
+      <li><a href="https://www.npmjs.com/package/connect-flash">connect-flash</a></li>
+      <li><a href="https://www.npmjs.com/package/express-session">express-session</a></li>
+      <li><a href="https://www.npmjs.com/package/lusca">lusca</a></li>
+      <li><a href="https://www.npmjs.com/package/helmet">helmet</a></li>
+    </ul>
+  </p>
+ </section>
