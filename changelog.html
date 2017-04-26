@@ -7,6 +7,1017 @@ title: Changelog
   <h1>MEAN.JS Changelog</h1>
 </section>
 
+<h1>Version 0.5.0 (21/10/2016)</h1>
+<h2>Bug Fixes & Several Updates</h2>
+<p>
+<li>bluemix(remove): Remove Excess CF files (#1542) (f0867c2)</li>
+<li>chore(core): Remove Bluemix (#1476) (dd80951)</li>
+<li>chore(release): bumping to version 0.5.0 (fe597de)</li>
+<li>chore(tidy): tidying up minor lint and layout issues (e5a5d24)</li>
+<li>fix(article): add callback for remove article (#1534) (a7aebbd), closes #1274</li>
+<li>fix(articles): Article controllers name conflicts (#1428) (c96f8c0)</li>
+<li>fix(articles): Article edit/delete validation (69b8a05), closes #1146</li>
+<li>fix(articles): Orphaned User reference throws server error (2bdde4e), closes #1082</li>
+<li>fix(bluemix): Changes Node Version In Bluemix Pipeline (c3d8da9)</li>
+<li>fix(bower): Aphabetize list (9fe0586)</li>
+<li>fix(build): fixing travis build to run the updated nsp command (#1478) (03160a9)</li>
+<li>fix(build): Linting error at gulpfile.js (80c08a3)</li>
+<li>fix(build): Remove BOM (52faf06), closes #1227</li>
+<li>fix(chat): fixed profile image not displaying properly on disconnect (24b6e3a)</li>
+<li>fix(client): lint issues for confirm() messages not referencing the window object (80226a2)</li>
+<li>fix(config): Added Gruntfile linting (6748a7f), closes #1125</li>
+<li>fix(config): config.app.domain -> config.domain (#1572) (4dd8669), closes #1506</li>
+<li>fix(config): Default config dangling comma (#1570) (ef3b361)</li>
+<li>fix(config): updating environment variable name for mongodb with the new one for Heroku (#1413) (64392b1)</li>
+<li>fix(core menu): Menuize the account routes so they can be added to by submodules (48eabd0)</li>
+<li>fix(core): Add "additionalProvidersData" to "safeUserObject" (ba85dcc)</li>
+<li>fix(core): Add custom 400 and 404 error messages (#1547) (6be12f8)</li>
+<li>fix(core): Adding server info to log initialization (36e956e)</li>
+<li>fix(core): Client routes guest access bug (bfcfb55)</li>
+<li>fix(core): Directive file naming convention (#1558) (baa291a)</li>
+<li>fix(core): fix ESLint console warnings, Twitter redirect, and and scope usage (#1388) (c95bd7d), closes #1388</li>
+<li>fix(core): fix page-title directive (#1404) (8287537), closes #1404</li>
+<li>fix(core): fix page-title directive (#1405) (d5a29f7), closes #1405</li>
+<li>fix(core): fix twitter meta tags (#1581) (59c11c6), closes #1581</li>
+<li>fix(core): Fixes issues with tests and Node v6 (#1458) (c35713d), closes #1458</li>
+<li>fix(core): packages update due to insecure old versions that carry vulnerabilities (1600705)</li>
+<li>fix(core): Remove duplicate angular interceptor (996976a), closes #1096</li>
+<li>fix(core): Remove the tag. (aebaf2f)</li>
+<li>fix(core): Remove trailing slash from routes (b004986), closes #1075</li>
+<li>fix(core): Serve static files without session init (4701722), closes #1089</li>
+<li>fix(core): Support WiredTiger engine errmsg format in MongoDB 3.2 (6265aaa), closes #1245</li>
+<li>fix(core): Typo in menu.client.service.js (#1355) (fde27f0)</li>
+<li>fix(core): Typo in page-title.client.directives.js (#1343) (c61640b), closes #1332</li>
+<li>fix(core): update npm commands and documentation (#1456) (64fd860)</li>
+<li>fix(core): Updating old package dependencies (#1490) (38d92e3)</li>
+<li>fix(dependencies): Lock dependencies major and minor versions (a2c43c2)</li>
+<li>fix(dependencies): updating karma and gulp dependencies to keep up to date (#1516) (015a430)</li>
+<li>fix(dependencies): updating package dependencies to keep up to date versions (7da7419)</li>
+<li>fix(dependency): Bump Mongoose to 4.4.8 (2f906e5), closes #1264</li>
+<li>fix(dependency): Mongoose 4.4.7 bug (07da139)</li>
+<li>fix(docker): more efficient dockerfile for changes strictly to packages.json or bowerr.json (1bd42f6)</li>
+<li>fix(docker): Update dockerfile for development and production (#1491) (e25670a), closes #1453</li>
+<li>fix(docker): updating maintainer and docker compose (5d2019f)</li>
+<li>fix(docker): updating the Dockerfile and docker-compose.yml for up to date versions of a MEAN.JS dev (abd7307)</li>
+<li>fix(docker): updating the dockerfile-production to build with gulp support (#1486) (1a274d2)</li>
+<li>fix(docs): Add git to Prerequisites (3fa9878), closes #1310</li>
+<li>fix(docs): documentation fix for Pivotal Web Services (#1376) (1159e74), closes #1376</li>
+<li>fix(docs): Fix comments content and style (d2b2dfd)</li>
+<li>fix(docs): the project now supports Node v5, updated the README (30139a2)</li>
+<li>fix(docs): updating links, English issues (2e7ac80)</li>
+<li>fix(documentation): Contributing.md typo (9d29e44), closes #1136</li>
+<li>fix(editorconfig): Fix file path patterns (#1362) (6852993), closes #1362</li>
+<li>fix(express): Incorrest uses of 400 error codes (#1553) (0ea8cec)</li>
+<li>fix(gulp): Removing transformUrl replace function from templatecache gulp task (59d9347)</li>
+<li>fix(gulp): replacing gulp-cssmin which has been deprecated and un-maintained with gulp-csso (b661284)</li>
+<li>fix(gulp): Trailing spaces lint error in gulpfile (#1303) (f2a6bf9)</li>
+<li>fix(gulp): unhandled error in gulpfile and also changing existing error related console.log() to con (b4c9464)</li>
+<li>fix(hsts): removing hsts configuration set on lusca's csrf settings but is already configured and pr (c9169e4)</li>
+<li>fix(lint): CSS alphabetize warnings (#1498) (b2a5cb5)</li>
+<li>fix(logger): cleaning up unused parameters in logger setup (#1521) (89e8d13)</li>
+<li>fix(security): fixing possible xss issue in parsed objects (2b0ae86), closes #1106</li>
+<li>fix(server): Remove unused loadModels() (#1426) (23fd205)</li>
+<li>fix(test): Remove npm warnings by testing against Node >=0.12 (6088e0f), closes #1015</li>
+<li>fix(test): Update Mocha, mock-fs, and fix Node 5 support (62095a1)</li>
+<li>fix(tests): Clean out .send() from tests (#1489) (25c8a60)</li>
+<li>fix(tests): Reorganized coverage tests (#1480) (70a3e4c)</li>
+<li>fix(Travis build): PhantomJS and SocketIO dependencies (64884b8)</li>
+<li>fix(typo): fixed a typo in PULL REQUEST template file (#1372) (4b549d8), closes #1372</li>
+<li>fix(ui): update social login design (2f394ec)</li>
+<li>fix(user): fix changeProfilePicture to overwrite existing files (234f0c6), closes #1415 #1415 #1415 #1415</li>
+<li>fix(user): hide delete button for self (#1535) (0736a40), closes #1531</li>
+<li>fix(user): remove bad request for local.png (#1538) (287f81c), closes #1537</li>
+<li>fix(user): specify a digest with crypto.pbkdf2Sync (#1429) (96aec09)</li>
+<li>fix(users): Correct spelling/grammar mistakes (3e6a65d), closes #1156</li>
+<li>fix(users): don't update secure profile fields (#1421) (730cca7), closes #1420</li>
+<li>fix(users): error objects were not handled (8e24954)</li>
+<li>fix(users): fix for users.profile.server.controller.js security (#1338) (2ad422c), closes #1338 #1338 #1338</li>
+<li>fix(users): fix redirect when signup or add provider (#1573) (0e2ea65), closes #1573</li>
+<li>fix(users): GitHub strategy missing email (#1250) (4906611)</li>
+<li>fix(users): Incorrect UsersService injection (#1283) (5137214)</li>
+<li>fix(users): Missing primary social provider (f2e18e2)</li>
+<li>fix(users): Profile image path is invalid after escaping (f88f28e), closes #1127</li>
+<li>fix(users): Removing redundant variables (f9c7403)</li>
+<li>fix(users): removing unused variable from code (03043dc)</li>
+<li>fix(users): test for usernameOrEmail (#1582) (ae63889)</li>
+<li>doc(package): Change meanjs version to 0.5.0-beta (6365fdd)</li>
+<li>doc(readme): Update Yo Generator section (099704c)</li>
+<li>doc(readme): wear the Snyk badge with pride! (#1583) (0773991)</li>
+<li>promise(core): Add Promise Option to Mongoose (#1560) (517dc32), closes #1559</li>
+<li>Fixing roles security issues (36acc48)</li>
+<li>- reading the right port in production (83686b8)</li>
+<li>.DS_Store banished! (6c57194)</li>
+<li>.DS_Store banished! (4c029d0)</li>
+<li>.editorconfig based on Felix style guide (a4d79bd)</li>
+<li>.ng-dirty.ng-valid angular classes (aab2689)</li>
+<li>(typo): add missing word (#1340) (e3572d2)</li>
+<li>[bug] Dont use Cache (3db8709)</li>
+<li>[bug] Gulp test wasn't running server tests (2131ccd)</li>
+<li>[bug] Seed Password's strength Closes #908, closes #908</li>
+<li>[doc] Add seed user instructions to README (927855f)</li>
+<li>[docs] Changelog (892d9bf)</li>
+<li>[docs] Changelog and updating package.json file for 0.4.2 release (bcdb663)</li>
+<li>[docs] Contributing.md (ef7ce74)</li>
+<li>[docs] Information about Contributing (5a4fe5a)</li>
+<li>[fix] Empty Chat Messages (8128570)</li>
+<li>[fix] Install ruby and SASS with Docker (814b856)</li>
+<li>[fix] Was storing a 6 char password in plain text fixes #829, closes #829</li>
+<li>[hotfix] Fixes db seed password bug (1c7d742)</li>
+<li>[hotfix] SeedDB missing in env config (28f1f57)</li>
+<li>[test] Allow an email with sub domains (74f58bb)</li>
+<li>* feat(core): node engine update, adding cleanup and reinstall npm scripts (b40cd2d)</li>
+<li>* fix(express): updating express session name variable due to deprecation (37183e0)</li>
+<li>#236 add .idea to gitignore (30d9494)</li>
+<li>#236 fix travis asking for user input (f57b51d)</li>
+<li>#236 implement swig instead of jade (a0c9de3)</li>
+<li>#450 Fixing unrelated jshint warnings (b61d6a7)</li>
+<li>#450 minor formatting fixes. (9f45e63)</li>
+<li>#450 Now the mocha task synchronously calls mongoose connect and (5f57f9d)</li>
+<li>#450 Use the error reported by mocha. Added some comments explaining (ffde5e8)</li>
+<li>#501 Handle 404 errors at Express backend at at Angular frontend (ba1a447)</li>
+<li>#501 Use req.format() to content-negotiate correct response (fd17026)</li>
+<li>package.json will always use 2 spaces indent (73be794)</li>
+<li>0.3RC (44bf81a)</li>
+<li>0.4.1 (834555c)</li>
+<li>Abstract nodemailer createTransport (d5cf18a)</li>
+<li>Add 'grunt debug' task (e746749)</li>
+<li>Add a little info about the sample app (57f1e24)</li>
+<li>Add account buttons to join more accounts (56b0c31)</li>
+<li>Add app name in email (b6cd10f)</li>
+<li>add bootstrap class 'unstyled' to remove bullet points in article list (cb62e46)</li>
+<li>add bootstrap class 'unstyled' to remove bullet points in article list (b9d9b61)</li>
+<li>Add check of password and salt in user auth (8f09b8b)</li>
+<li>Add envvars for deploying to cloud providers (fa1171f)</li>
+<li>Add ESLint support (d5cc4b7)</li>
+<li>Add fonts and svgs to gzip compression pattern (fea436f)</li>
+<li>Add Grunt task to make sure uploads directory exists (eba4754)</li>
+<li>Add joining of multiple accounts (00f3940)</li>
+<li>Add Karma unit tests (673ac81)</li>
+<li>Add linkedin support for login (58d2cbf)</li>
+<li>Add Mac and Windows Back In (a598e2b)</li>
+<li>add missing dependencies (e585231)</li>
+<li>Add missing newline at the end of text files (e027f40)</li>
+<li>Add newlines to ends of files (78f2808)</li>
+<li>Add some abstraction to local strategy login error (e11ffda)</li>
+<li>Add support for params in menu items  (#1305) (5817a48), closes #1304</li>
+<li>add user route tests (4bbc4a3)</li>
+<li>add windows, chance linux to ubuntu (ac25044)</li>
+<li>Added a missing semicolon for consistency. (d7c04a8)</li>
+<li>Added Article Delete Support (eeb5423)</li>
+<li>Added check for empty salt before attempting to encrypt password. If you sign up with OAuth provider (d3b9852)</li>
+<li>Added configuration for owasp. Synchronize client owap configs with the server configs. (d896d07)</li>
+<li>Added Dependencies Badge (f17c48c)</li>
+<li>Added Deploy To Bluemix button to the README (2892fe3)</li>
+<li>added domain configuration option if required to set the cookie for a specific host (7174625)</li>
+<li>Added github signin/signup to the list of signups/signi's (3dcf45c)</li>
+<li>Added grunt and nodemon (3340268)</li>
+<li>added isSelected function for nav selection (905d547)</li>
+<li>Added Madhums Credit (1c20b31)</li>
+<li>Added Master and Dev Badges to README (a7e065e)</li>
+<li>Added mean.io binding for the page (3fff4d1)</li>
+<li>Added mean.io binding for the page (d0a4622)</li>
+<li>Added missing /client/ path (195cbe5)</li>
+<li>Added missing dependency injection in Chat (0fa9b95)</li>
+<li>Added newlines (666abde)</li>
+<li>added permission request for email (feaef31)</li>
+<li>Added requirement to passport-linkedin to the package.json to fulfill missing requirement. (8499c45)</li>
+<li>Added role based middleware authorisation (5eed915)</li>
+<li>Added Ruby and Sass to requirements with install directions (cec3e1f)</li>
+<li>Added semicolons to server code for consistency and general formatting (82ef533)</li>
+<li>Added short Gulp Section to Intro (1a3d3c1)</li>
+<li>Added user test file (2aebeca)</li>
+<li>Added Visual Studio files to gitignore (c3380bf)</li>
+<li>Added Visual Studio files to gitignore (6c2c77c)</li>
+<li>adding a grunt-contrib-copy dev dependency to create a local copy of local.js file and then updating (aca6a79)</li>
+<li>adding ability to configure session.secret in local env config (2eb0b09)</li>
+<li>Adding Accounts View (ac3ffca)</li>
+<li>Adding Angular-Strap + Datepicker (b005891)</li>
+<li>Adding Angular-Strap + Datepicker (c9c41a9)</li>
+<li>Adding another job for Travis CI to run the grunt coverage task on every build (c6e0f68)</li>
+<li>Adding Bower Resolutions (5a780aa)</li>
+<li>Adding Bower Support (a45c695)</li>
+<li>Adding Bower Support (3f689ee)</li>
+<li>Adding Bower Support (3688970)</li>
+<li>Adding Bower Support (4e59fd9)</li>
+<li>Adding Bower Support (f9f4983)</li>
+<li>Adding Bower Support (f2ab7ef)</li>
+<li>Adding Bower Support (d69bf01)</li>
+<li>Adding Bower Support (c96c654)</li>
+<li>Adding Bower Support (aa6a09b)</li>
+<li>Adding Bower Support (dcc82a6)</li>
+<li>Adding Bower Support (719628f)</li>
+<li>Adding Bower Support (80be397)</li>
+<li>adding caching for packages and npm modules across builds. Also setting sudo to false as it's not us (97d7eb7)</li>
+<li>adding chalk for formatting console messages instead of ANSI escape codes (22e330b)</li>
+<li>adding chalk to package.json, locking to 0.5 version as a known and compliant API (9b694db)</li>
+<li>Adding client test coverage. (d5ea5c9)</li>
+<li>Adding Comments (7ae98d5)</li>
+<li>adding couple more tests to confirm users model works as expected (ac35f0f)</li>
+<li>Adding coverage report for server-side tests using istanbul (7252032)</li>
+<li>Adding CSS For non-sass Applications (7e94a15)</li>
+<li>Adding CSS For non-sass Applications (c7db3a2)</li>
+<li>Adding Dist files (7091f6a)</li>
+<li>Adding Dist files (b11bd07)</li>
+<li>Adding Dist files (7b0b860)</li>
+<li>Adding drafts for mean-module integration, footer (d95f6df)</li>
+<li>Adding drafts for mean-module integration, footer (f49c329)</li>
+<li>adding eclipse and intellij project files to .gitignore (6036d65)</li>
+<li>adding error handling incase the config logging option is not defined (5598caf)</li>
+<li>Adding explanation for environments to README (c5dbb93)</li>
+<li>Adding explanation for environments to README (9d8cdf0)</li>
+<li>Adding explanation for environments to README (dee0664)</li>
+<li>Adding explanation for environments to README (75c720a)</li>
+<li>adding https option for running with TLS/SSL (2ac17f7)</li>
+<li>adding ios rendering support for mobile browsers per bug report #194 (faa4f23)</li>
+<li>adding karma coverage for grunt (c2b13b9)</li>
+<li>Adding karma-ng-html2js-preprocessor to fix karma tests. Adding user mock to articles tests. (c468539)</li>
+<li>Adding Livereload to Jade files (517fc6f)</li>
+<li>Adding MEAN.JS version information as part of the startup info when app loads (58b371b)</li>
+<li>adding more API tests (eb7c4f8)</li>
+<li>Adding New files (7ba7dcf)</li>
+<li>adding ordered cipher list, stronger settings in generate-ssl-certs script, and hsts settings (4949bdd)</li>
+<li>Adding Password Reset (f4b62ca)</li>
+<li>adding proper handling for invalid model ObjectIds passed on to article routes (5bccbdd)</li>
+<li>adding protractor options to fix travis failing (83eb2dc)</li>
+<li>adding return done() to tests (b07af94)</li>
+<li>adding route tests for user/admin CRUD operations (de354ee)</li>
+<li>adding secure.js environment option, reverting production.js, and adding openssl options to gen-cert (7946cfe)</li>
+<li>Adding Shrinkwrap.json to lock versions - https://www.npmjs.org/doc/shrinkwrap.html (f15e914)</li>
+<li>adding ssl back in (3e1d0b5)</li>
+<li>adding stronger password requirements for improving security based on OWASP (1fd6bb6)</li>
+<li>adding submenus functionality to the menu service (7adb7f3)</li>
+<li>Adding suite of tests for the e-mail validation field in the users model (89050d5)</li>
+<li>adding support for a configurable ssl-mode and and ssl cert/key files in the environment configurati (384fb7d)</li>
+<li>adding support for configurable session cookie parameters for express (5d20988)</li>
+<li>Adding support for configurable session expiration time (0aa5e68)</li>
+<li>adding support for coveralls integration for mean.js to report live project code coverage informatio (7c286b0)</li>
+<li>adding support for logger handling which allows for saving the requests to a logfile, useful for pro (bf7bcc6)</li>
+<li>Adding support for meanjs-version specific configuration option and displaying both MEAN.JS project (a12746e)</li>
+<li>adding support for nodejs v4 and allowing it to fail without failing the complete build for CI (0302a76)</li>
+<li>Adding support for sessionKey configuration parameter to allow to easily change the session key that (360c3a4)</li>
+<li>adding test to check proper handling when no article exists (9952138)</li>
+<li>adding tests for directives (6514044)</li>
+<li>adding tests for meanjs core server functionality (6f8b5bf)</li>
+<li>adding the default config/env/local.js instance (619e123)</li>
+<li>Adding the logger module (5114a04)</li>
+<li>Adding the logger module (557e775)</li>
+<li>Adding the logger module (d115178)</li>
+<li>Adding the logger module (fd9de92)</li>
+<li>Adding the logger module (33c9c50)</li>
+<li>Adding the logger module (ae190e3)</li>
+<li>adding the new scripts directory (586f0ad)</li>
+<li>Adding the NSP tool to audit our packages version for known security vulnerabilities as part of the (e1d69b8)</li>
+<li>adding the production app debugging access.log file (2d54e83)</li>
+<li>adding the required support to properly build the nodejs v4 edition (b7a57ab)</li>
+<li>Adding the salt part to the hashPassword FN (09f1eab)</li>
+<li>Adding Travis CI File (3579a4f)</li>
+<li>Adding Travis Tag (285e605)</li>
+<li>Adding twitter meta tags (89e2da7)</li>
+<li>Adding twitter meta tags (271bd1b)</li>
+<li>addressing missing newlines and node 0.12 version for travis-ci (d5b22e3)</li>
+<li>Adds support for re-running server and client tests automatically (6bc36ed)</li>
+<li>Adjust profile image URLs on Fb and Twitter strategies (12766c1)</li>
+<li>Admin module base & user admin implementation. (6066020)</li>
+<li>Admin Users require role (bbbe877)</li>
+<li>Allow Guests to view Articles (cbebed9)</li>
+<li>angular form $valid (c291a23)</li>
+<li>angular form $valid (f51ccca)</li>
+<li>AngularJS latest is good for now (209b702)</li>
+<li>appending a base tag to the head before jasmine tests run. (9e7239b)</li>
+<li>Article Cleanup (c11c428)</li>
+<li>Articles Example Fix (ccf7eb3)</li>
+<li>Articles Example Fix (6b0109e)</li>
+<li>Articles Example Fix (6598c04)</li>
+<li>Articles Example Fix (23dc7a3)</li>
+<li>Auth service (6cfa74e)</li>
+<li>Auth service (9c501db)</li>
+<li>Because html5Mode is enabled, the links the social buttons point to will not work, the request to /a (87217da)</li>
+<li>Better user model behavior and test teardown (b6830ba)</li>
+<li>Bootstrap template dependency fix (bf06b9a)</li>
+<li>Bug Fix (9af341b)</li>
+<li>Bug Fix (964cf2d)</li>
+<li>bug fix: MenuItem and SubMenuItem can now be private independently of parent (6730ae3)</li>
+<li>Bump glob to version 5.0 (dd0cdfc)</li>
+<li>Bump minor version (4cca972)</li>
+<li>change _.extend to _.merge (4d1ae6e)</li>
+<li>Change file ignore pattern to match word 'core' instead of chars (659c8de)</li>
+<li>Change hebrew to english in create view (dda6f5c)</li>
+<li>Change hebrew to english in create view (8c28f50)</li>
+<li>Changed .html files to have 2 spaces instead of tabs (5754b03)</li>
+<li>Changed all the indents to the spaces(tab size 4) (7cf1fc2)</li>
+<li>Changed favicon string to env variable (5af083c)</li>
+<li>Changed variable name to owaspConfig (d73d6ba)</li>
+<li>checking for Env injected by fig/docker (c918f93)</li>
+<li>Clean up (c91a330)</li>
+<li>Clean up article example (0b3dead)</li>
+<li>Cleaning Up (e6daba5)</li>
+<li>Cleaning Up (d7fcb2b)</li>
+<li>Cleaning Up (de25892)</li>
+<li>Cleaning Up (05a0082)</li>
+<li>Cleaning Up (5cef4aa)</li>
+<li>Cleaning Up (93c9a2c)</li>
+<li>Cleaning Up (8f3af33)</li>
+<li>Cleaning Up (6c3564f)</li>
+<li>Cleaning Up (fd76c38)</li>
+<li>Cleaning Up (b26b952)</li>
+<li>Cleaning Up (fb38c34)</li>
+<li>cleaning up application startup information (9fb2215)</li>
+<li>cleaning up code blocks in README (8c2156f)</li>
+<li>cleaning up css and js assets so they look indented and easy to read on browsers when viewing the HT (73684e9)</li>
+<li>cleaning up jslint warnings (8324179)</li>
+<li>Cleanly track mongoose connection in test task sequence (71c4d4b)</li>
+<li>Clearing Config File (6ef0d73)</li>
+<li>client-side form validation with ng-messages. (8015476)</li>
+<li>Client-side Validation updates (fa00fe9)</li>
+<li>Client-side Validation updates (b468d68)</li>
+<li>Client-side Validation updates (cfb0e1b)</li>
+<li>Client-side Validation updates (cec748e)</li>
+<li>Client-side Validation updates (8524d5f)</li>
+<li>Client-side Validation updates (d7bb81d)</li>
+<li>Client-side Validation updates (725cc4c)</li>
+<li>Closes #202 - if user does not authorize email scope, email will not be mapped. Username will be ge (27d2818), closes #202</li>
+<li>Code from mleanos (9fc6091)</li>
+<li>Comment Fixes (8ad4728)</li>
+<li>comment fixes, indentation and general cosmetic cleanup (0e692c5)</li>
+<li>commenting mean-logger (6a0fb8b)</li>
+<li>commenting mean-logger (15bb540)</li>
+<li>Complete Cleanup (d7fb398)</li>
+<li>Config (9815266)</li>
+<li>Config File Rebasing (0f948dc)</li>
+<li>Configuring Extensions (1c7ae6e)</li>
+<li>Correct </li>
+<li>Tags and set Title (4b43c4e)</li>
+<li>Correct the issue of Google OAuth2 redirect missing the hashbang after enabling GooglePlus API - Fix (7c015e2), closes #535</li>
+<li>correct the livereload host (c919364)</li>
+<li>Corrected 'prod' task in gulpfile (d737696)</li>
+<li>Corrected "Yoeman" typo in client HTML home (1625479)</li>
+<li>correcting 500 server error to 400 client error (4871173)</li>
+<li>correcting README instructions for the ssl certificates folder location (b8a3a1f)</li>
+<li>correcting spellings and English for main README file (bb56abb)</li>
+<li>Correctly encode and decode password salt (08f1750)</li>
+<li>Correctly encode and decode password salt (325a19e)</li>
+<li>Create dropdown on menuitems with submenus (12e81fd)</li>
+<li>creating a local.example.js as a sample file to extend configuration to local repository without com (dce17e9)</li>
+<li>Creating Modules (f6e59d3)</li>
+<li>Current Stable (c0de030)</li>
+<li>Database seeding (ea97f2e)</li>
+<li>default port set to 8443 so it doesnt require root privileges (2faaca5)</li>
+<li>Delete unused travis file (27dfdfe)</li>
+<li>Deleting Dist folder (65d3d40)</li>
+<li>Deleting Shrinkwrap since its notworking with hosted cloud services (458987c)</li>
+<li>Deprecated $http success/error promise methods (#1508) (fa13804), closes #1479</li>
+<li>Disabled compass until dependency issues are resolved (d41074d)</li>
+<li>disabling JSONP from controllers and commenting out from expressjs configuration, allowing users to (6298e35)</li>
+<li>Disconnect method to close DB connection (e954a20)</li>
+<li>displayName undefined (7605956)</li>
+<li>do not save state to previous (history) for routes marked ignoreState. (c6d2683)</li>
+<li>do not use aes when creating ssl certs to prevent password requirement (bf777d9)</li>
+<li>documentation updates to the meanjs sample application landing page (b056f6d)</li>
+<li>Don't overwrite statics (12037bc)</li>
+<li>Dont bower install bootstrap-assets. Grab twitter bootstrap css from git. (f77f715)</li>
+<li>Dummy config directory for the articles module to make it easier for developers to understand and re (903b4ca)</li>
+<li>duplicate controller. This was moved under settings/ (d0bb4a3)</li>
+<li>Duplicate CRUD Test - Profile Picture (a871c92)</li>
+<li>Enable log options for Morgan (8cd2291)</li>
+<li>Enable redirection to previous page after login (e6a35a7)</li>
+<li>enabling the lint task when running tests so we can identify coding convention issues on Pull-Reques (c90dda9)</li>
+<li>Enhancement(core):Relative positon attribute added to the header. (661b3b6), closes #1275</li>
+<li>enhancing error message with an actual instruction on how to fix the missing ssl problem when runnin (315187e)</li>
+<li>Enhancing support for development envionrment to enable mongoose debug mode so that we can debug db (0bcadcc)</li>
+<li>ensure NODE_ENV is valid, default regex for walk (6b57516)</li>
+<li>env (1bd958e)</li>
+<li>Everything Latest (57055a3)</li>
+<li>Fail Build on Node 4 (c8672a5)</li>
+<li>Favicon invalid path (e6a5732)</li>
+<li>feat (title): Dynamic Title: Improve SEO (49f6a83)</li>
+<li>feat(gulp) - refactoring gulpfile to properly add support for node-inspector as its own dedicated gu (b198ca7)</li>
+<li>fig bug workaround (c62e1c1)</li>
+<li>Fig changed to Compose (08b2f74)</li>
+<li>Filter states for which login is required during state change (9fc88e6)</li>
+<li>Final Clean Up after code review (1b54d35)</li>
+<li>Finalizing the User Accounts Module (279eb39)</li>
+<li>first commit (58a7ebe)</li>
+<li>First Commit (fda7c3d)</li>
+<li>First Commit (e6f8553)</li>
+<li>first docker version with fig (a68b588)</li>
+<li>Fix - Remove Ruby Dependencies (Grunt no longer needs them) (46f0e15)</li>
+<li>Fix #283 glob path issue for Windows (acccc03), closes #283 #283</li>
+<li>Fix #321 image paths in social meta tags v0.4, closes #321</li>
+<li>Fix bower post install script (3f3f039)</li>
+<li>Fix bower post install script (287c626)</li>
+<li>Fix bower post install script (d282aa0)</li>
+<li>fix btn-large class names. (b6818b6)</li>
+<li>Fix bug in foot.jade which tries to assign host instead of comparing it (7a872fa)</li>
+<li>Fix client-side tests after removing (99e5803)</li>
+<li>Fix Config (14c3ce7)</li>
+<li>fix default session cookie maxAge (3b5e13e)</li>
+<li>Fix deprecated ExpressJS req.param('provider') (10d35d1)</li>
+<li>Fix Development Config (921bb41)</li>
+<li>fix failing tests (67e38ae)</li>
+<li>Fix Gulp throwing errors (6f09033)</li>
+<li>Fix headers to HTML5 format (238bbe1)</li>
+<li>fix indentation (cb9d7e3)</li>
+<li>Fix indentation (c290dc9)</li>
+<li>Fix indentation (e84746f)</li>
+<li>Fix intdentation (430e66b)</li>
+<li>Fix Karma and Menus (7c0078c)</li>
+<li>Fix message catching the field for which a duplicate key error ocurred (0efc82d)</li>
+<li>Fix more typos and spruce up some grammar and wording. (c9996fd)</li>
+<li>Fix my own grammar mistake. (ce6ef3b)</li>
+<li>Fix password validation error in change password (9db5e71)</li>
+<li>fix port binding error when deploy to heroku (eb96242)</li>
+<li>Fix Production SWIG (899b65d)</li>
+<li>Fix Production SWIG (72331de)</li>
+<li>Fix readme (26e2025)</li>
+<li>Fix redirection to previous state after required authentication (2b8bee0)</li>
+<li>fix some typos (8fc9b50)</li>
+<li>Fix swig templates (31a1931)</li>
+<li>fix tests (f0ae031)</li>
+<li>Fix tests & refactor SSL support (c931012)</li>
+<li>Fix Tests to Fit New Jasmine (f0508e3)</li>
+<li>Fix Travis CI Bower (54f77f1)</li>
+<li>Fix Travis CI Bower (9f14dc0)</li>
+<li>Fix Travis CI Bower (12b8710)</li>
+<li>Fix typo (587d551)</li>
+<li>Fix typo (be36823)</li>
+<li>Fix typo at gitignore (b7f24c6)</li>
+<li>Fix typo in Error handling controller code (867cf5e)</li>
+<li>fix typos in tests (62ce19c)</li>
+<li>Fix typos in tests: s/witout/without/gc (4121fc8)</li>
+<li>fix(authentication) Stops error on signin/signup (#1495) (67d1a5a)</li>
+<li>fix(docker) - Updated Dockerfile production (#1523) (ae8d2b3)</li>
+<li>fix(gulp) remove gulp-node-inspector dependency (0b13107)</li>
+<li>fix(tests) fixing assertion test for logger which failed on undefined variable (0744ce5)</li>
+<li>fix(users) Handle missing email - OAuth (#1501) (e3eafa6)</li>
+<li>Fixed ""Implicit textOnly for script and style is deprecated."" warning - see http://www.kaspert (afb080c)</li>
+<li>Fixed ""Implicit textOnly for script and style is deprecated."" warning - see http://www.kaspert (2b1020f)</li>
+<li>fixed #286 which originated due to commit fa1171f (ea50c8b), closes #286</li>
+<li>fixed 403 redirect if not signed in (#1496) (8b54669), closes #1496</li>
+<li>Fixed a couple of typos (ce456b9)</li>
+<li>Fixed asset management structure (14f5d06)</li>
+<li>fixed bug #923 - making password reset links work for both http and https configuration (b824ebc), closes #923</li>
+<li>Fixed bug with Socket IO session (792488e)</li>
+<li>Fixed comment that broke the ackge.json (88bdced)</li>
+<li>Fixed comment that broke the ackge.json (4c65264)</li>
+<li>Fixed Comments and README (08a2c0f)</li>
+<li>Fixed consolidate dying on behalf of a cache=true, it needs to be cahce=memory (752854f)</li>
+<li>fixed defect where no flash (error/success) messages would be displayed due to wrongly placed flash( (55aeaad)</li>
+<li>Fixed end tags in page header (851973f)</li>
+<li>Fixed error message for non-unique username. (873e91f)</li>
+<li>Fixed issue where if local.js exists then grunt test will run on that environment config and possibl (d188326)</li>
+<li>Fixed locals.cache when NODE_ENV==='production' (16f3393)</li>
+<li>Fixed minor type-o's and set owasp.config() rather than the underlying configs. (8dcf3f6)</li>
+<li>Fixed password hashing in general (47561ce)</li>
+<li>Fixed relative paths for html5mode (2cab7b7)</li>
+<li>fixed small bug where logger was used also on production environment. Makes sense that original inte (e2ea8da)</li>
+<li>Fixed support for Passport Google with OAuth2 (e9588db)</li>
+<li>Fixed two tiny typos. (959d7e7)</li>
+<li>Fixed typo of div attribute (d80a46b)</li>
+<li>fixed typo on angular user module stateprovider states (6c889a3)</li>
+<li>Fixed User model tests (14b8dd4)</li>
+<li>Fixes #45 - Npm install error on 3.0 (b8340cb), closes #45</li>
+<li>fixes #898 - addressing the issue where the webhook API is hard-coded into the travis config file (70e83ff), closes #898</li>
+<li>fixes db deployment issue on heroku. production db value needs to be set in production.js and remove (7edb6b8)</li>
+<li>Fixing 'me' password leak (ca0d6a9)</li>
+<li>Fixing article and express 4 modification (5ff49a7)</li>
+<li>Fixing articles (38f08ff)</li>
+<li>Fixing Articles Issues (f132e10)</li>
+<li>Fixing Bower Versions, Fix Flickering (a3a7129)</li>
+<li>fixing bug #317 for typo, thanks to @adipuscasu for finding (6cbefb6)</li>
+<li>fixing chalk and console usage for consistency reasons (411765b)</li>
+<li>Fixing Configuration Files (85c97f8)</li>
+<li>Fixing Conflicts (9575fdc)</li>
+<li>Fixing enviornment issue with new JSHint (4c0ee35)</li>
+<li>fixing err object which isnt present in this check, replacing it with a text message (52fe443)</li>
+<li>Fixing errors style (f8ac701)</li>
+<li>Fixing Facebook Redirect (86186ad)</li>
+<li>Fixing Facebook Redirect (46715a1)</li>
+<li>Fixing Facebook Redirect (ef50e5d)</li>
+<li>fixing grunt and gulp e2e tests (fdf1ad5)</li>
+<li>Fixing grunt and version issues (dba1e8b)</li>
+<li>Fixing grunt build task (5a2eb6e)</li>
+<li>Fixing Grunt Watch (d9231cc)</li>
+<li>Fixing grunt-nodemon and some dev dependency versions (fac6ab8)</li>
+<li>Fixing Header Active items (3cc8caf)</li>
+<li>Fixing Heroku Bower Failure (bac1a06)</li>
+<li>Fixing Heroku Bower Issues (e7b1fe0)</li>
+<li>Fixing HTML issues with home (6455bdc)</li>
+<li>fixing identations (84efda1)</li>
+<li>Fixing indentation (a7aa199)</li>
+<li>Fixing Indentation Convention to TABS (c1213e9)</li>
+<li>fixing issue #348 - instead of returning a server error 500 on article loading which isnt found we'l (56aff70)</li>
+<li>Fixing Jasmine (61ce509)</li>
+<li>FIxing Jasmine tests to fit new version (584ccf1)</li>
+<li>Fixing jshint (d35cd02)</li>
+<li>fixing jshint issues by requiring single quotes (a38abd0)</li>
+<li>Fixing jshint issues with grunt, gulp, and reset-password script. (1f79770)</li>
+<li>Fixing Karma Tests (b87b376)</li>
+<li>Fixing Karma To Load Libraries Independently (81254e0)</li>
+<li>Fixing Karma Version (6705319)</li>
+<li>Fixing License and Readme (956ec25)</li>
+<li>Fixing menu (a29ec24)</li>
+<li>Fixing Menus service remove bugs. (ec3af65)</li>
+<li>Fixing models auto loading bug (fe50b41)</li>
+<li>Fixing Navbar Flickering (322d865)</li>
+<li>Fixing OAuth authentication (0e7ebb6)</li>
+<li>Fixing Passport Split (02b9773)</li>
+<li>Fixing password headers (5087895)</li>
+<li>Fixing PR (4dd90f1)</li>
+<li>Fixing Redirect in Authentication middleware (3a329dc)</li>
+<li>fixing removeMenuItem on menu service (fca7e9e)</li>
+<li>Fixing Salt Save Error (987634e), closes #75</li>
+<li>Fixing Session Hash Secret (d9be8d8)</li>
+<li>Fixing some typos (9503720)</li>
+<li>fixing spacing (96bcd6d)</li>
+<li>Fixing style, adding article test (c42c8eb)</li>
+<li>Fixing the Foot.jade to use env var instead of host (218da62)</li>
+<li>Fixing the new Jade issues (0c869a2)</li>
+<li>Fixing Travis Grunt Issues (8b8da52)</li>
+<li>Fixing Travis Grunt Issues (f077caf)</li>
+<li>Fixing Travis Grunt Issues (b50ac61)</li>
+<li>Fixing Travis Stall (50b3b88)</li>
+<li>Fixing typo in scripts/generate-ssl-certs.sh (8f97155)</li>
+<li>fixing up a user model test which was not setup correctly without the async done() callback, which l (463f5b9)</li>
+<li>fixing up broken links with exchange for newer documentation links on expressjs.com (fc45556)</li>
+<li>fixing up SSL support on startup to fallback to non-SSL mode if files are not present (03b7f6f)</li>
+<li>Fixing user details exposure in articles example (0cfbafa)</li>
+<li>Fixing Versions (2f3b951)</li>
+<li>Force Lowercase & Remove Sensitive Data (aafa5e6)</li>
+<li>Forever Heroku Support (c1caddb)</li>
+<li>Format code according to ESLint rules (0323696)</li>
+<li>Formatting and Indentation (75cf745)</li>
+<li>formatting reboot (space-2 and consistency) (ef3a3f9)</li>
+<li>further refactoring of the route middlewares so they can be easily shared amongst app routes (dea044c)</li>
+<li>Genericize invalid username or password message (aeb0272)</li>
+<li>Get site title from default (40878bb)</li>
+<li>Global Mocha timeout (037878b)</li>
+<li>Grunt Support Added, Fixed Bower support on heroku (d9db704)</li>
+<li>Grunt Support Added, Fixed Bower support on heroku (b1d0dba)</li>
+<li>grunt watch runs test suite on any changes (71365db)</li>
+<li>Gulp now closes the mongoose connection (6cce3d0), closes #450</li>
+<li>hash password with pbkdf2 (ebddcd3)</li>
+<li>Hide email address and remove trailing whitespaces (c800c0a)</li>
+<li>how to enable live reload (0cbb6c5)</li>
+<li>Ignore ALL .log files at gitignore (f24ce65), closes #523</li>
+<li>implemented feature to address issue 553 - provide a local.js file for local development configurati (ba3e99f)</li>
+<li>Implemented password reset core feature (58cfb2e)</li>
+<li>Improve EditorConfig file (7e397e9)</li>
+<li>Improved model autoload regex (3f05db1)</li>
+<li>Including Inspiration Credit (101b45d)</li>
+<li>Including Inspiration Credit (4044fdb)</li>
+<li>Indentation fixes (fe1d584)</li>
+<li>Infer first and last name from github and twitter response (db067bb)</li>
+<li>Initial commit to return /client to the URL include paths (d319f92)</li>
+<li>Initial support for deploying MEANJS to Cloud Foundry (efd3ee4)</li>
+<li>instead of relying on previously hard-coded passport strategies we can assume that any user entry wh (969c691)</li>
+<li>introducing the request object for the index base HTML template which can utilize information such a (acc091f)</li>
+<li>JSHint test failing because of missing semicolon (c572ed7)</li>
+<li>keep enable Cache-Control (72c813d)</li>
+<li>keeping nodejs versions 0.10 and 0.12 as the test servers for travis configuration (96f8ab5)</li>
+<li>Link for download link (NodeJs download) (c83eefa)</li>
+<li>Link to editorconfig from CONTRIBUTING.md (601cf9f)</li>
+<li>little fix on removeSubMenuItem() (e0fc745)</li>
+<li>Load dynamic view-helpers after connect-flash and express.session (5e1b568)</li>
+<li>local.example.js still has old fb auth callback (3527537)</li>
+<li>Lock mongoose version to a working version (64916dd)</li>
+<li>lock to specified JS dependencies version (1e75b42)</li>
+<li>Locking NPM versions (8c825ff)</li>
+<li>Locking Versions Using Shrinkwrap (9e0317f)</li>
+<li>Logger Development config default (99fe989)</li>
+<li>Major Fixing and Refactoring tests (6db8a4e)</li>
+<li>Make emails unique (5d4d7ce)</li>
+<li>make sure we catch errors connecting to mongodb due to wrongly supplied connection string or others, (9c25722)</li>
+<li>Make tests pass (1f7bfdd)</li>
+<li>Make TopBar Public By Default (e68b422)</li>
+<li>making the log format configurable and enabled morgan logging on all environments, not just developm (0f4a585)</li>
+<li>manual docker build and run (9b81e3f)</li>
+<li>mask exception route, but show not-found page. (9fdd2a0)</li>
+<li>Mean Logger Module (ebbe968)</li>
+<li>Merge from gabrielmanchini - issue #50 (014d941)</li>
+<li>Middleware Fix (84874bc)</li>
+<li>Migration to Express 4.x (c9d641e)</li>
+<li>minor change on addMenuItem (c89c891)</li>
+<li>minor fixes on client view (4fd55e4)</li>
+<li>Mocha test timeouts fixes #955, closes #955</li>
+<li>Modify Generator Refrences/Docs (c539cdb)</li>
+<li>More Naming Fixes, articles cleanup (edd549d)</li>
+<li>move helmet and express.static before sessions for performance (ca009b9)</li>
+<li>Move license to it's own file. Easier to see what the license is when first encountering the repo (8479e46)</li>
+<li>Move livereload, image, and favicon to config (a62c4dd)</li>
+<li>move task configs to separate properties. (0f7cf54)</li>
+<li>Moved all editor setting to bottom (0a7a715)</li>
+<li>Moved all editor setting to bottom (c7ec27e)</li>
+<li>Moved flash messages from auth.jade to signin.jade. Placed within error div. (2def71a)</li>
+<li>Moved owasp config into default and reverted other config files. (0588eab)</li>
+<li>Moving from Underscore to LoDash (9c6e551)</li>
+<li>Moving from Underscore to LoDash (81fea35)</li>
+<li>moving out configuration items from express.js code to a proper configuration directive (ee63f17)</li>
+<li>Moving router above static (14147f7)</li>
+<li>moving security configs to secure code block to remove requirement for private key and certificate (f786dda)</li>
+<li>Moving to MEAN.JS (eae6f2d)</li>
+<li>Moving to MEAN.JS (17e089e)</li>
+<li>Moving to ng-bind fixing submenus (75a9eda)</li>
+<li>New 0.4 version (ab81d61)</li>
+<li>Nodemon Heroku Support (5c58883)</li>
+<li>Nodemon Heroku Support (d603cb4)</li>
+<li>one more time - update to valid Jade doctype (270d2c3)</li>
+<li>organizing contributed helpful scripts into a ./scripts/ folder before we mess up the app root direc (5c689e9)</li>
+<li>Pass db connection object to connect-mongo. (1005d3b)</li>
+<li>PayPal Authentication (8694b7e)</li>
+<li>porting pull request from master to 0.4.0 branch: Local environment variables to address issue #553 (1ea9f55)</li>
+<li>Prepare for role-based access control of states (e21805f)</li>
+<li>Prettier res.status().format() (7070796)</li>
+<li>Properly run JSHint (822d7ca)</li>
+<li>Properly track DB disconnect (81c2847)</li>
+<li>Provide a fallback and upgrade path for IE6/7/8 users (daa124a)</li>
+<li>providing more verbose output for current nodejs app configuration on application startup (374b45c)</li>
+<li>Putting the head in order (2802729)</li>
+<li>re-factoring the server model tests to create user model from schema only during tests, so that we c (346ebd6)</li>
+<li>Readme Changes (a28a951)</li>
+<li>Readme Changes (b298293)</li>
+<li>Readme Changes (c861fd6)</li>
+<li>Readme Changes (4aa95b4)</li>
+<li>realized I forgot to add the actual logger (d2d4e8c)</li>
+<li>Refactor (fb71619)</li>
+<li>Refactoring server application service to enable modularity and callbacks, as well as provide app, d (edb6234)</li>
+<li>refactoring so that app routes can be maintained more easily from app/ directory (which makes more s (0afb2e6)</li>
+<li>refactoring the async nature in the user model tests to account for mocha 2 second timeouts causing (c967a98)</li>
+<li>refactoring the seeddb logic to work with promises all over due to all the async behavior (9886093)</li>
+<li>Refactoring the seeded user objects to be easily maintained (05f9053)</li>
+<li>Refactoring the Session Cookie configuration and adding more configurale parameters (80b63b5)</li>
+<li>Reformat and bootstrappify the client home view. (46092dd)</li>
+<li>Refreshing the M.E.A.N links and description in the homepage (4a65439)</li>
+<li>Remove (Requirements for Grunt) (fc65241)</li>
+<li>remove async module (1846287)</li>
+<li>Remove console.log from an article test (a8dae99)</li>
+<li>Remove data- prefix from attributes (3bf07fe)</li>
+<li>Remove Dev Branch Badges (019e420)</li>
+<li>Remove dist files (eef2a33)</li>
+<li>Remove dist files 0.4.0 (eced93f)</li>
+<li>remove double esnext entry in .jshintrc (8b29833)</li>
+<li>Remove duplicate assets definition (50937ea)</li>
+<li>Remove executable bit when not necessary (4879a8e)</li>
+<li>remove href attribute. (9ca71c8)</li>
+<li>Remove Image Uploads (c94c870)</li>
+<li>Remove Image Uploads (9ef1812)</li>
+<li>Remove jQuery dependency. Default to bootstrap components written in pure AngularJS. (c11b2b5)</li>
+<li>Remove more unused requires (b2d76b8)</li>
+<li>Remove ng-init directive from article list. (7770ccc)</li>
+<li>Remove non CF specific files (57079e2)</li>
+<li>Remove redundant variable declaration (99b6756)</li>
+<li>remove space which messes up the url local variable (38c87c0)</li>
+<li>Remove un-used hasAuthorization and requiresLogin (fcb6f90)</li>
+<li>Remove unecessary comment in karma.conf.js (d27baea)</li>
+<li>remove unnecessary query param from find function (69800ab)</li>
+<li>remove unused dependcies. (75c8052)</li>
+<li>Remove unused passport require (7f1b46b)</li>
+<li>Remove unused scope declarations. (9e19493)</li>
+<li>Remove username from facebook strategy (9929f1b)</li>
+<li>Remove window.app (db56846)</li>
+<li>removed /#! in user controllers (de3b890)</li>
+<li>Removed debug code. (c0a1ce5)</li>
+<li>Removed duplicate include for crypto (0dbab18)</li>
+<li>Removed duplicate mention of installing grunt (537cc89)</li>
+<li>removed fig workaround (7257f2e)</li>
+<li>Removed grunt-bower-task dependency. Requires additional installation step: bower install (5908768)</li>
+<li>Removed index.css (7f1faeb)</li>
+<li>removed livereload from prod (2407999)</li>
+<li>Removed localhost from env files, as it is not necesary and can introduce bugs in non-local environm (5934970)</li>
+<li>Removed old images (f150407)</li>
+<li>Removed sudo from npm install -g mean-cli in doc (b2377dd)</li>
+<li>Removed test case files from other pull request (c5e4c16)</li>
+<li>Removed the Show User method (dbe7213)</li>
+<li>Removed unnecessary modules (963794a)</li>
+<li>Removed unneeded comas from gruntfile. (e4519bc)</li>
+<li>removed unused gulp-watch dependency (7876fad)</li>
+<li>Removes unnecessary whitespace, formats code and add comments (482ab19)</li>
+<li>Removing .DS_Store (b64a4da)</li>
+<li>Removing .DS_Store (39fc1df)</li>
+<li>Removing an unecessary code line (5610d78)</li>
+<li>Removing Compass, Fixing Windows Errors, Removing Makefile, Tiding Code (1fbd245)</li>
+<li>Removing Compass, Fixing Windows Errors, Removing Makefile, Tiding Code (612b014)</li>
+<li>removing debug information for current environment configuration which is replaced by new output (e2b91b0)</li>
+<li>removing deprecated options in the latest versiosn of jshint which will be replaced by adding JSCS s (9149dc4)</li>
+<li>Removing DSSTORES (28e2845)</li>
+<li>Removing DSSTORES (a3daa3b)</li>
+<li>Removing forward slash (211e830)</li>
+<li>Removing Grunt Task (b8a23eb)</li>
+<li>Removing Grunt Task (0397817)</li>
+<li>removing keepAlive conf to fail travis if e2e tests fail (70d7e17)</li>
+<li>removing left-overs of merge diff from 0.4 to master (834bfd6)</li>
+<li>Removing swig from controller (5067750)</li>
+<li>Removing target on signin and signup anchors to prevent a complete page reload when changing to thos (2a3516e)</li>
+<li>removing the comment too, it may be confusing to think it should just be enabled for JSONP to be glo (e29ee6f)</li>
+<li>removing the logger module (9761df3)</li>
+<li>removing the logger module (33e1025)</li>
+<li>removing the logger module (add868f)</li>
+<li>removing the logger module (ddd0b3b)</li>
+<li>removing un-necessary .js extension (dc4492f)</li>
+<li>removing un-necessary console.log() calls (1ee5bc1)</li>
+<li>removing unused passport variable in express.js library file (2ff2490)</li>
+<li>Renamed files using convention verb-object.client.etc. Closes #817 (ab82acb), closes #817 #817</li>
+<li>renaming strength meter, hiding when password field is empty, and refactoring directives to use $va (f733efb)</li>
+<li>Repeating Characters condition (3d37e20)</li>
+<li>replace deprecated grunt-nodemon debug option (8f30cda)</li>
+<li>Replaced dependency on server.js for mocha tests. (cf7a3f0)</li>
+<li>Replaced SHA1 password hashing with more bcrypt (035dd2c)</li>
+<li>replacing deprecated require.extensions nodejs call with explicit full paths for require() (14c5d1b)</li>
+<li>Replacing ngRoute with UI-Router (311605a)</li>
+<li>replacing old expressjs 3.x built-in 'compress' middleware with standalone compression middleware (56bcf17)</li>
+<li>Require server in gruntfile for mocha tests. (c639ae6)</li>
+<li>Reset password script (e1496dc)</li>
+<li>reset-password enhancements and bug fix (01a8d5e)</li>
+<li>restoring previous state of removing local.js, we'll generate it with grunt when the project starts- (0fc412d)</li>
+<li>return a 404 for not found api, module and lib routes (74273da)</li>
+<li>Revert "Enhancement(core):Relative position attribute added to the header." (b633dfb)</li>
+<li>Revert "Merge branch 'pr/76' into 0.3.1" (a7cb2b8)</li>
+<li>Revert "Merge pull request #79 from mrngoitall/master" (a23f46f)</li>
+<li>Revert back to bootstrap2.3.2 (3561526)</li>
+<li>Rise gunt-concurrent task limit. (6c7f03f), closes #144</li>
+<li>Run tests using test environment (fe71732)</li>
+<li>Seed options - logResults (0560062)</li>
+<li>Services Dependency Injection (1ca5d16)</li>
+<li>Set bootstrap repo as dep (cd07a10)</li>
+<li>Set versions based on npm install --save (5c950bf)</li>
+<li>settings for cloud9 ide added to gitignore (689d7a8)</li>
+<li>setup dropdown menu (30c9160)</li>
+<li>should return done(err) in article server route test (d00f4ce)</li>
+<li>Show error message when sending password request mail fails (619c7f2)</li>
+<li>Show mobile nav by default. (4f4d133)</li>
+<li>Simplified Gruntfile, Minor Bug Fixing (62bf313)</li>
+<li>small bug fix where Mongoose validation functions must always return booleans (3963892)</li>
+<li>Small Update (ea04c9e)</li>
+<li>Socket IO client enhancement with connect() method (65c6d1f)</li>
+<li>Solves User model validation bug (288f0b4)</li>
+<li>Sorting out .gitignore (75aad2e)</li>
+<li>Spliting Strategies (52dea2b)</li>
+<li>Spliting Strategies (880ad6a)</li>
+<li>Spliting Strategies (22d0e7a)</li>
+<li>Support CDN Assets (8cccae2)</li>
+<li>support for test:server and test:client grunt tasks which were removed from the merge of 0.4.0 into (2be8f71)</li>
+<li>Support ngmin (30f977c)</li>
+<li>SVG Badges (30cd520)</li>
+<li>Switched to bootstrap-assets bower component so we have css and js files instead of less. When this (97fc815)</li>
+<li>switched to handlebar template for passing the server's owasp config down to the client. (4ddb059)</li>
+<li>Switched to using new MongoDB service in Bluemix since MongoLabs is being removed (7340e68)</li>
+<li>Synchronous tests (32e0d12)</li>
+<li>tab indent fix (4451ba7)</li>
+<li>Task enhancements (1fa9776)</li>
+<li>test (0239187)</li>
+<li>test (0035793)</li>
+<li>Test (5f51593)</li>
+<li>Test (f8282a5)</li>
+<li>Testing Fix (7354e78)</li>
+<li>Testing Fix (f358e81)</li>
+<li>The article middleware was calling getErrorMessage with a null argument, causing a crash when this m (71167b0)</li>
+<li>Tiny fixes (b12a3b4)</li>
+<li>Title should be required. (d8fa855)</li>
+<li>Travis now sends notifications to Gitter (d1c3348)</li>
+<li>typo (86d38df)</li>
+<li>Typo (c8e62e1)</li>
+<li>Typo in test message: (66bf2dc)</li>
+<li>UI Bootstrap (5b1488a)</li>
+<li>UI Bootstrap (713a196)</li>
+<li>UI Bootstrap (6995ba2)</li>
+<li>UI Bootstrap (44502c0)</li>
+<li>Unauthorized client routing (ed89f9e)</li>
+<li>Update .bowerrc (c6b6758)</li>
+<li>Update .travis.yml (fd98f26)</li>
+<li>Update .travis.yml (0ad46a2)</li>
+<li>Update 0.3.2 (f6e1909)</li>
+<li>Update Bower Dependencies (1a7a2d6)</li>
+<li>Update Bower manifest (08c0732)</li>
+<li>Update config.js (5654e1f)</li>
+<li>Update connect-mongo to support Mongoose 4.0.0 (dc6f74d)</li>
+<li>Update create-article.client.view.html (3949400)</li>
+<li>update dependencies (d4c880b)</li>
+<li>Update dependencies (1fa147e)</li>
+<li>Update Dev Dependencies Versions (12cb3bf)</li>
+<li>Update Dev Depenedencies + Password Change Fix (c0a7c05)</li>
+<li>Update edit-profile.client.view.html (19e937c)</li>
+<li>Update express.js (4825f44)</li>
+<li>Update form-article.client.view.html (7ffbd3f)</li>
+<li>update gruntfile.js to let jshint adhere to .jshintrc (a2f31f2)</li>
+<li>update gulp-sass to ensure node-0.12 compatibility (75bb6f2)</li>
+<li>Update header.client.view.html (83ceb27)</li>
+<li>Update home.client.view.html (595f858)</li>
+<li>Update home.client.view.html (005162a)</li>
+<li>Update home.client.view.html (b3a9969)</li>
+<li>Update home.client.view.html (bf5268e)</li>
+<li>Update home.client.view.html (f6f0c9f)</li>
+<li>Update init.js (bcbf2af)</li>
+<li>update javascript libs (00a4668)</li>
+<li>Update middleware for body parsing in Express MEAN configuration (ad95ea3), closes #136</li>
+<li>Update Mongoose Version (09bc727)</li>
+<li>Update package.json (2ab02b7)</li>
+<li>Update package.json (6993150)</li>
+<li>Update package.json (30fd05c)</li>
+<li>Update package.json to include peer dependencies (5d5d1b7)</li>
+<li>Update package.json to indent space-2. (f345d20)</li>
+<li>Update packages (71604bb)</li>
+<li>Update path in tests (c065246)</li>
+<li>Update pipeline.yml (9af6f2b)</li>
+<li>Update README.md (b232af6)</li>
+<li>Update README.md (c06a9ae)</li>
+<li>Update README.md (c849b85)</li>
+<li>Update README.md (7759257)</li>
+<li>Update README.md (13f03ec)</li>
+<li>Update README.md (cbc337b)</li>
+<li>Update README.md (2bf84d7)</li>
+<li>Update README.md (f319571)</li>
+<li>Update README.md (af5e48f)</li>
+<li>Update README.md (ddaecff)</li>
+<li>Update README.md (91ff079)</li>
+<li>Update README.md (29fafa2)</li>
+<li>Update README.md (80f2726)</li>
+<li>Update README.md (a42988f)</li>
+<li>Update README.md (aaa597b)</li>
+<li>Update README.md (d621186)</li>
+<li>Update README.md (c65ba05)</li>
+<li>Update README.md (24d449c)</li>
+<li>Update README.md (276c4a8)</li>
+<li>Update README.md (249c246)</li>
+<li>Update README.md (e66533e)</li>
+<li>Update README.md (ac97ef7)</li>
+<li>Update README.md (1ad9777)</li>
+<li>Update README.md (111da0e)</li>
+<li>Update README.md (4d21120)</li>
+<li>Update README.md (0addcdf)</li>
+<li>Update README.md (977426f)</li>
+<li>Update README.md (e99faff)</li>
+<li>Update README.md (39db681)</li>
+<li>Update README.md (2dd53a0)</li>
+<li>Update README.md (e7d7e23)</li>
+<li>Update README.md (06436c0), closes #13 #13</li>
+<li>Update README.md (bbf8727), closes #13 #13</li>
+<li>Update README.md (e70923f)</li>
+<li>Update README.md (6ee822a)</li>
+<li>Update README.md (5d5896c)</li>
+<li>Update README.md (71736d4)</li>
+<li>Update README.md (a9bde6f)</li>
+<li>Update README.md (abf4d66)</li>
+<li>Update README.md (78aa99a)</li>
+<li>Update README.md (de9daed)</li>
+<li>Update README.md (f4ccd5a)</li>
+<li>Update README.md (2955fdf)</li>
+<li>Update README.md (2510ab5)</li>
+<li>Update README.md (9b2f8de)</li>
+<li>Update README.MD (1d3b83c)</li>
+<li>Update README.md to include where to download the MEAN.JS boilerplate (2f6427a)</li>
+<li>Update server.js (2225dda)</li>
+<li>Update server.js (1dd124a)</li>
+<li>update to angular-bootstrap 0.12.0 + fix breaking changes (adf6e0c)</li>
+<li>Update to AngularJS 1.2.4 (f2a85f8)</li>
+<li>Update to config tabs (2c319c5)</li>
+<li>Update twitter.js (d633904)</li>
+<li>Update UIBootstrap Version (3ee0e86)</li>
+<li>Update users.authentication.server.controller.js (786c546)</li>
+<li>Update users.js (1d9f1a0)</li>
+<li>Updated angular-file-upload to use static dependency (a5bceb9)</li>
+<li>Updated authorization.js redirect (01c22e4)</li>
+<li>Updated Dockerfile (e3e1839)</li>
+<li>updated readme to make sure that people understand to open a browser on port 3000 in the end of the (41da378), closes #5</li>
+<li>updated readme to make sure that people understand to open a browser on port 3000 in the end of the (928f40c), closes #5</li>
+<li>Updated routes and a logic fix (03a4042)</li>
+<li>updated the development.js environment configuration file to use the mean-dev database instead of me (2e03d13)</li>
+<li>updated to return the req.send() to be consistent with the rest of our codebase (00b5ff0)</li>
+<li>Updated to use @fyockm bootstrap-css-only repo. Changed header markup to use bootstrap 3 (0773d24)</li>
+<li>updating .gitignore file with more popular entries (7bce829)</li>
+<li>updating .gitignore with ignoring the correct location of the ssl certficates (a17f86d)</li>
+<li>updating .travis.yml file for allowing builds to fail (984e168)</li>
+<li>updating 0.4.0 merged branch to support the declerative db connection object instead of just a conne (b76c2cd)</li>
+<li>updating app startup debug output details for mongodb connection (75c40bd)</li>
+<li>Updating Build Files (2f6a0ce)</li>
+<li>updating calls to addMenuItem and addSubMenuItem (d0268ed)</li>
+<li>updating comments for tests in code (1eddc47)</li>
+<li>Updating configuration text in README. Still needing more definition on social registration properti (170eb80)</li>
+<li>Updating configuration text in README. Still needing more definition on social registration properti (f6801c5)</li>
+<li>Updating Credits (51b2f31)</li>
+<li>updating debug information to support https mode reporting (2786c95)</li>
+<li>Updating Dependencies (d7d4518)</li>
+<li>Updating Deprecated res.send (e98554e)</li>
+<li>updating documentation (add000d)</li>
+<li>updating error handler to exit the node app if we cant establish access to mongodb for some reason (4d9d5ec)</li>
+<li>Updating Gitignore (83d3cd4)</li>
+<li>updating gitignore file to disregard the _site/ directory which gets created when using jekyll for g (379f58e)</li>
+<li>updating grunt 'force' option to default/force it to false so that we can fail any task that is fail (c22c888)</li>
+<li>updating package.json with latest stable API version for chalk (8769a6c)</li>
+<li>updating profile upload with a new version of multer (7ecf933)</li>
+<li>updating README file with more elaborate instructions on running grunt in different environment mode (39e4282)</li>
+<li>Updating README with requirements for grunt, and slightly more clarity on config.js (d805fc2)</li>
+<li>updating script to attempt generating the ssl certificates directory first before trying to create f (6ec9233)</li>
+<li>updating ssl generation script to check app root directory location as safe-guard (176b619)</li>
+<li>updating support for mongodb connection string to support special chars for username and password (5b7423c)</li>
+<li>updating the new 0.4.1 dev branch for when 0.4.0 will actually be released (f8750b3)</li>
+<li>updating the schema save pre hook so that it checks for a modified version of the password field bef (bf79c17)</li>
+<li>updating travis ci build to install required ruby gem dependencies (dd254e1)</li>
+<li>updating travis to support installing a local mail server (0017886)</li>
+<li>upgrade to angular 1.2.10 to avoid interaction in bower installed based on https://github.com/linnov (7907608)</li>
+<li>Use list-unstyled to get rid of list styles. Using Bootstrap 3 now. (1cc82ae)</li>
+<li>use consolidate to make template engine configurable (412d6b3)</li>
+<li>Use form validation in articles (e56c76a)</li>
+<li>use Google OAuth2Strategy to avoid error that key $t must not start with '$' (0116b34)</li>
+<li>use helmet module to more secure application (afb0f97)</li>
+<li>Use module export instead of json string so that we can use environment variable for credentials inf (3041b4f)</li>
+<li>Use ng-annotate instead of ngmin (26d8a12)</li>
+<li>use ngmin, save some typing (9067499)</li>
+<li>use pushstate, fall back to window.location.hash. (b249512)</li>
+<li>Use Scrypt for password hashes (5022bc2)</li>
+<li>Use twitter.id_str instead of twitter.id because project.id is returned string explicitly by the fol (e566939)</li>
+<li>Use validator.js for email validation (a23290b)</li>
+<li>User ID middleware now uses .findById (121c38e)</li>
+<li>User model tests for roles (263adcc)</li>
+<li>Users Module Revamp (36f71fa)</li>
+<li>Users Module Version (38bffbc)</li>
+<li>utilize angular valid / email directive (9221ee9)</li>
+<li>utilize angular valid / email directive (d4a8774)</li>
+<li>utlize angular .ng-dirty / .ng-valid / .ng-invalid (0857f8b)</li>
+<li>valid name needs to be lowercase (f55bc2f)</li>
+<li>valid name needs to be lowercase (c0ffda5)</li>
+<li>Wait for async saving and removing (70828bf)</li>
+<li>Wait for async saving and removing (1897ef9)</li>
+<li>walk models directory (e230ea2)</li>
+<li>workaround fig bug (c93abfe)</li>
+<li>workaround for express 4 connectMongo session bug (ff4ae8b)</li>
+<li>workaround manual bower install (04e74f2)</li>
+<li>Fix(Users): Remove redundant request body (#1554) (5725c44)</li>
+<li>grunt(core): Remove Excess Grunt Dependencies (#1543) (afe0d38)</li>
+<li>feat(angular): disable Angular debug data in production (#1457) (07a860f)</li>
+<li>feat(articles): Article Admin feature (#807) (89075cb)</li>
+<li>feat(articles): ArticlesService extended $resource (#1266) (a7370a7)</li>
+<li>feat(articles): Modify articles module to implement style guidelines. (b3ad56e), closes #874 #339</li>
+<li>feat(articles): Rename list.articles.client.controller.js to list-articles.client.controller.js (a014ffc), closes #1192</li>
+<li>feat(build): added imagemin to gulp (1a3f6f8)</li>
+<li>feat(build): Modify Travis config (#1467) (55525bd)</li>
+<li>feat(build): Wiredep task for grunt and gulp (#1402) (0934f87), closes #1398 #1402</li>
+<li>feat(chat): Modify chat module to implement johnpapa styleguide. (5d15e64)</li>
+<li>feat(CI): Add Node v6 and remove v5 from allow_failures (#1328) (5da5a61)</li>
+<li>feat(config): Adding host configuration feature (6e4c54f)</li>
+<li>feat(config): adds a generic DOMAIN configuration environment (#1469) (cf246ba), closes #871 #847</li>
+<li>feat(config): Deprecate JSHint in favor of ESLint (d14d513), closes #1072 #1097</li>
+<li>feat(config): Local env configurations (6d74474)</li>
+<li>feat(config): Upgrade angular-bootstrap 0.13 to 1.0 (9cd4cec), closes #1142 #1131</li>
+<li>feat(config): upgrade to angular 1.5 (500d1a6), closes #1124</li>
+<li>feat(core): Add error handler for failed requests (#1557) (d5b8ffa), closes #1556</li>
+<li>feat(core): add notification feedback with angular-ui-notification (#1532) (607ed06)</li>
+<li>feat(core): Add prod asset versioning (#1536) (b0c5ad9), closes #1509</li>
+<li>feat(core): change console in angular to (#1551) (4aa5d77), closes #1541</li>
+<li>feat(core): Enable ng-strict-di (#1389) (5009a72)</li>
+<li>feat(core): Minor UI fixes for mobile; autofocus (#1499) (73a7c2c), closes #1499 #1496 #1479</li>
+<li>feat(core): Modify core module to implement style guidelines. (b2462ec)</li>
+<li>feat(core): Move template to .github folder (cb841ef)</li>
+<li>feat(core): update project dependencies, fix express config (#1463) (1413645), closes #1463</li>
+<li>feat(core): updating dependencies (#1548) (e5e984c)</li>
+<li>feat(core): updating gulp dependencies (8645b24)</li>
+<li>feat(csrf): Added Lusca CSRF Prevention (b2db312), closes #828</li>
+<li>feat(debug): replacing deprecated gulp-node-inspector with vanilla node-inspector (19145b9)</li>
+<li>feat(deps): Update server-side dependencies (1c143ae)</li>
+<li>feat(deps): update socket.io dependency (fc78cbd)</li>
+<li>feat(docker): Add Dockerfile for production (25bd40c), closes #1431 #1435 #1435 #1435</li>
+<li>feat(docker): persisting the container names for the docker containers that get created allows to ea (852a1a6)</li>
+<li>feat(docker): Update docker-compose to version 2 (2066be6), closes #1434 #1434 #1434 #1434 #1434 #1434 #1434</li>
+<li>feat(express): introducing handlebars nodejs template system (#1461) (f6e5797), closes #1286</li>
+<li>feat(forever): removing forever dependency (#1409) (6911b80)</li>
+<li>feat(github): adding support for Pull Requests templates (b3f9180)</li>
+<li>feat(gulp): Add copyLocalEnvConfigExample task to Gulp (b0f76dc)</li>
+<li>feat(gulp): Add gulp task mkdir:upload to ensure upload directory exists. (6cacc15)</li>
+<li>feat(gulp): Add node-inspector task to Gulp (936379d)</li>
+<li>feat(gulp): add wiredep gulp task (3d199ea)</li>
+<li>feat(gulp): deprecating Grunt in favor of Gulp and NPM commands (#1390) (d915157)</li>
+<li>feat(gulp): Gulp Server Watch for Mocha (bf2eeed)</li>
+<li>feat(gulp): replacing the unmaintained gulp-livereload with gulp-refresh (119753f)</li>
+<li>feat(gulp): test:server:watch task onlyChanged (#1298) (eaead7a), closes #1297</li>
+<li>feat(html): support noscript tag on layout for browsers with no javascript (#1454) (99c64cf)</li>
+<li>feat(logs): replacing unmaintained and vulnerable file-stream-rotator package with winston log facil (c8cbcd3)</li>
+<li>feat(mongodb): support for mongodb secure connections with ssl certificates (#1472) (c0f6cb3), closes #1349</li>
+<li>feat(package.json): Set Async version to ~ from ^ (2ee7194)</li>
+<li>feat(profile): Profile picture cropping, mobile uploading and progress bar (#1443) (246c5d9)</li>
+<li>feat(sass): replacing grunt-contrib-sass with grunt-sass (#1363) (239ce61)</li>
+<li>feat(security): adding snyk support to test our dependencies for insecure vulnerabilities as part of (0638294)</li>
+<li>feat(ssl): supporting a certificate authority bundle file for the secured SSL configuration (#1342) (c364922)</li>
+<li>feat(tests): add client and server test coverage to Gulp (#1466) (7be1910)</li>
+<li>feat(travis): Test on Mac and Linux (0091d3f)</li>
+<li>feat(ui): improved social login buttons UI (#1471) (c2cfc38)</li>
+<li>feat(user): add strict validations for username (#1574) (fb9d9d9), closes #1204</li>
+<li>feat(users): change username to usernameOrEmail in signin (#1545) (6a6b630)</li>
+<li>feat(users): Edit Profile client controller tests (#1329) (b795ddc)</li>
+<li>feat(users): Modify users module to implement style guidelines. (173b702)</li>
+<li>feat(users): prevent route leaking access token (#1417) (54ae7dc)</li>
+<li>feat(users): Supporting valid email according to HTML5 and RFC 822 (33258f1), closes #934</li>
+<li>deprecate(grunt): Remove Grunt (#1175) (83c7c47)</li>
+<li>eat(core): use npm commands (5a91d7d)</li>
+<li>bug: remove social account. (b18a7dd)</li>
+<li>bug(docker): Change Node Version (710c70d)</li>
+<li>bug(docs): Update change log command (ab7d92a)</li>
+<li>bug(readme): Remove Broken Live Demo Link (9bfb312)</li>
+<li>test(travis): Add Testing for Node 5 (eafad77)</li>
+<li>BUG: fix admin access (blocking user PUT) (839f805)</li>
+<li>BUG: Path separator support for windows. (3e378b4)</li>
+<li>BUG: Removed a ng-binding to article.content in user-list.client.view.html (2747df6)</li>
+<li>formatting: indent (b8d6fa7)</li>
+<li>Feature: Article CRUD ops. Added supertests. closes meanjs/mean#92 (2ec6fa0), closes meanjs/mean#92</li>
+</p>
+
 <h1>Version 0.4.2 (11/11/2015)</h1>
 <h2>Small Bug Fixes & General Update</h2>
 <p>
